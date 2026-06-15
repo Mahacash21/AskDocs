@@ -1,0 +1,20 @@
+# API keys and environment variables
+.env
+
+# Vector database - too large for GitHub
+chroma_db/
+
+# Virtual environment - never commit this
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PDF uploads - optional, remove this if you want to include sample PDFs
+docs/
