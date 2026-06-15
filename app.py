@@ -19,7 +19,8 @@ if "collection_name" not in st.session_state:
 #step 3 - file uploader  uploaded file object in memory we need to build the file path and save it to disk so that we can pass the file path to the ingest function
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
-if uploaded_file is not None and not st.session_state.ingested:  # if a file is uploaded and not ingested yet
+# if a file is uploaded and not ingested yet
+if uploaded_file is not None and not st.session_state.ingested:  
     file_path = os.path.join("docs", uploaded_file.name)  # save the uploaded file to a docs location
     with open(file_path, "wb") as f:
         f.write(uploaded_file.getbuffer())
