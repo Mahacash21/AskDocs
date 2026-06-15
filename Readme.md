@@ -3,7 +3,7 @@ AskDocs 📄
 Upload any PDF and ask questions about it in plain English. AskDocs uses RAG (Retrieval-Augmented Generation) to find the most relevant parts of your document and generate accurate, grounded answers using OpenAI.
 
 
-What it does
+What it does ?
 
 
 Upload a PDF through a simple web interface
