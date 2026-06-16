@@ -1,4 +1,4 @@
-# step 1 imports
+# step 1 imports   from other modeules and libraries we need
 import streamlit as st
 from ingest import ingest_document
 from rag import ask
