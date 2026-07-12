@@ -27,3 +27,7 @@ jobs:
 
       - name: Run tests
         run: echo "tests will go here"
+
+      - name: Check for secrets
+        run: pip install detect-secrets && detect-secrets scan
+
