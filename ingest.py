@@ -15,8 +15,7 @@
 from pypdf import PdfReader   #read the PDF file
 from sentence_transformers import SentenceTransformer   #for embedding the text
 import chromadb
-#from torch import chunk    #vector database
-#import os  #for file handling
+
 
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -65,14 +64,15 @@ def ingest_document(file_path, collection_name="askdocs"):
 '''
 This is the explaination of the if __name__ == "__main__": block in Python.
 The concept is called "module guard" or "entry point check"
-Every Python file has a built-in variable called __name__. Python sets it automatically depending on how the file is being used.
+Every Python file has a built-in variable called __name__. Python sets it automatically 
+depending on how the file is being used.
 
 Two scenarios:
 Scenario 1 — You run the file directly
 python ingest.py
 Python sets __name__ = "__main__" — so the if block runs.
 Scenario 2 — Another file imports it
-pythonfrom ingest import ingest_document  # inside app.py
+from ingest import ingest_document  # inside app.py
 Python sets __name__ = "ingest" — so the if block is skipped. Only the function is loaded.
 
 '''
